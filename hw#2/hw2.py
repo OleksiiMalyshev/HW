@@ -111,10 +111,9 @@
 
 # list_A = [2, 3, 4]
 # list_B = [5, 6, 7]
-# result_list = []
-# for num in range(len(list_A)):
-#     result_list.append(list_A[num] * list_B[num])
-# print(result_list)
+# list_A = list(map(lambda x: x+3, list_A))
+# print(list_A)
+
 # import functools
 
 # lst_to_sort = [5, 18, 1, 24, 33, 15, 13, 55]
