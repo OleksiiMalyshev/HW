@@ -109,10 +109,10 @@
 # print(lst_to_sort)
 # print(new_lst)
 
-# list_A = [2, 3, 4]
-# list_B = [5, 6, 7]
-# list_A = list(map(lambda x: x+3, list_A))
-# print(list_A)
+list_A = [2, 3, 4]
+list_B = [5, 6, 7]
+lst_C = [list_A[i] ** list_B[i] for i in range(len(list_A))]
+print(lst_C)
 
 # import functools
 
@@ -120,7 +120,7 @@
 # # a = lambda x, y: x + y
 # # print(functools.reduce(a, lst_to_sort))
 # new_lst = list(filter(lambda elem: (elem % 2 == 1),lst_to_sort))
-# print(new_l
+# print(new_lst)
 # b = [int(i) for i in range(-10,10)]
 # lst = list(filter(lambda elem: (elem < 0), b))
 # print(lst)
