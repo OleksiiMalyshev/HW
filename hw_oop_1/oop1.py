@@ -42,19 +42,22 @@ class School:
 # 6*. Create a new class SchoolBus that will inherit all of the methods from School and Bus and will have its own - bus_school_color
 
 class SchoolBus(School, Bus):
-    def __init__(self, color,get_shool_id, number_of_students, capacity, max_speed, mileage):
-        School.__init__(self,get_shool_id, number_of_students)
-        Bus.__init__(self,capacity, max_speed, mileage)
+    def __init__(self, color, get_shool_id, number_of_students, capacity, max_speed, mileage):
+        School.__init__(self, get_shool_id, number_of_students)
+        Bus.__init__(self, capacity, max_speed, mileage)
         self.color = color
+
     def bus_school_color(self):
         print("I`m yellow")
 
     def blabla(self):
-        print(self.max_speed,self.color)
+        print(self.max_speed, self.color)
 
 
-scbs = SchoolBus('red',15,100,55,10,10000)
-#scbs.blabla()
+scbs = SchoolBus('red', 15, 100, 55, 10, 10000)
+
+
+# scbs.blabla()
 
 
 # 7. Polymorphism: Create two classes: Bear, Wolf. Both of them should have
@@ -74,37 +77,59 @@ class Wolf:
 bear = Bear()
 wolf = Wolf()
 
+
 # for beasts in (bear,wolf):
 #     beasts.make_sound()
 
 # 8. Create class City with name, population instance attributes, return a new instance only when population > 1500,
 # otherwise return message: "Your city is too small".
-
-# 9. Override a printable string representation of the City class and return: The population of the city {name} is {population}
-
 class City:
+    def __new__(cls, name, population):
+        if population > 1500:
+            return super().__new__(cls)
+        else:
+            return 'Your city is too small'
+
     def __init__(self, name, population):
         self.name = name
         self.population = population
 
-    def chk_population(self):
+
+city_1 = City('London', 10)
+print(city_1)
+city_2 = City('Paris', 1501)
+print(city_2)
+print(city_2.population)
+
+
+
+# 9. Override a printable string representation of the City class and return: The population of the city {name} is {population}
+
+class CityV2:
+
+    def __init__(self, name, population):
+        self.name = name
+        self.population = population
+
+    def __str__(self):
         if self.population > 1500:
-            return print(f"The population of the city {self.name} is {self.population}")
-            # return print(f"{self.name} city is big"), self.population
+            return f"The population of the city {self.name} is {self.population}"
         else:
-            return print("Your city is too small")
+            return "Your city is too small"
 
-star = City("Starling",100000)
-central = City("Central", 1499)
 
-# star.chk_population()
-# central.chk_population()
+central = CityV2("Central", 1499)
+star = CityV2("Star", 1501)
+
+print(central)
+print(star)
+
 
 # 10*. Override magic method __add__() to perform the additional action as 'multiply' (*)
 # the value which is greater than 10. And perform this add (+) of two instances.
 
 class Add:
-    def __init__(self,first):
+    def __init__(self, first):
         self.first = first
 
     def __add__(self, other):
@@ -112,9 +137,13 @@ class Add:
             return self.first * other.first
         else:
             return self.first + other.first
+
+
 a = Add(10)
 b = Add(10)
 c = a + b
+
+
 # print(c)
 
 # 11. The __call__ method enables Python programmers to write classes where the instances behave like functions and can be called like a function.
@@ -122,9 +151,11 @@ c = a + b
 
 class Call:
     def __call__(self, a, b):
-        return a+b
+        return a + b
+
+
 c = Call()
-print(c(10,20))
+# print(c(10, 20))
 
 
 # 12*. Making Your Objects Truthy or Falsey Using __bool__().
@@ -146,7 +177,9 @@ class MyOrder:
     def __bool__(self):
         len_chk = len(self.cart)
         return len_chk > 0
-order_1 = MyOrder(['a','b','c'],'d')
-order_2 = MyOrder([],'a')
-print(bool(order_1))
-print(bool(order_2))
+
+
+order_1 = MyOrder(['a', 'b', 'c'], 'd')
+order_2 = MyOrder([], 'a')
+# print(bool(order_1))
+# print(bool(order_2))
