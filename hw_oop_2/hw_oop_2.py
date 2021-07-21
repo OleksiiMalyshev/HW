@@ -270,5 +270,5 @@ class Celsius:
         return f'Now it is {self.temp} Celsius'
 
 today = Celsius(35)
-print(today)
-print(today.temperature)
+# print(today)
+# print(today.temperature)
