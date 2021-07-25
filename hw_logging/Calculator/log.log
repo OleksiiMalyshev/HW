@@ -1,0 +1,112 @@
+INFO: 2021-07-25 18:46:41,275: calculator.py: - Programm started
+INFO: 2021-07-25 18:46:46,569: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:46:48,633: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:46:50,025: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:46:50,026: calculator.py: - Root function with args -125 , 3
+INFO: 2021-07-25 18:47:32,823: calculator.py: - Programm started
+INFO: 2021-07-25 18:47:34,858: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:47:36,410: calculator.py: - User chose 3 operation
+ERROR: 2021-07-25 18:47:36,411: calculator.py: - Wrong operator given by user
+INFO: 2021-07-25 18:47:40,488: calculator.py: - Program continue with users command
+INFO: 2021-07-25 18:47:42,233: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:47:43,321: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:47:44,649: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:47:44,649: calculator.py: - Root function with args -125 , 3
+INFO: 2021-07-25 18:49:07,312: calculator.py: - Programm started
+INFO: 2021-07-25 18:49:11,657: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:49:14,121: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:49:14,536: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:49:14,536: calculator.py: - Root function with args -125 , 3
+INFO: 2021-07-25 18:51:48,056: calculator.py: - Programm started
+INFO: 2021-07-25 18:51:50,504: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:51:53,256: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:51:53,784: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:51:53,784: calculator.py: - Root function with args -125 , 3
+ERROR: 2021-07-25 18:51:53,785: calculator.py: - Value error
+INFO: 2021-07-25 18:52:08,696: calculator.py: - Program continue with users command
+INFO: 2021-07-25 18:52:11,337: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:52:13,577: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:52:15,258: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:52:15,259: calculator.py: - Root function with args -125 , 3
+ERROR: 2021-07-25 18:52:15,259: calculator.py: - Value error
+INFO: 2021-07-25 18:53:10,663: calculator.py: - Programm started
+INFO: 2021-07-25 18:53:12,664: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:53:16,089: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:53:17,097: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:53:17,097: calculator.py: - Root function with args -125 , 3
+INFO: 2021-07-25 18:54:40,935: calculator.py: - Programm started
+INFO: 2021-07-25 18:54:43,256: calculator.py: - num1 got 1000 value
+INFO: 2021-07-25 18:54:44,231: calculator.py: - User chose + operation
+INFO: 2021-07-25 18:54:45,768: calculator.py: - num2 got 20000 value
+INFO: 2021-07-25 18:54:45,768: calculator.py: - Plus function with args 1000 , 20000
+INFO: 2021-07-25 18:54:45,768: calculator.py: - Plus function with args 1000 , 20000
+INFO: 2021-07-25 18:54:45,769: calculator.py: - Plus func returned 1000 + 20000 = 21000
+INFO: 2021-07-25 18:54:53,816: calculator.py: - Program continue with users command
+INFO: 2021-07-25 18:55:20,411: calculator.py: - Programm started
+INFO: 2021-07-25 18:55:24,567: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:55:26,600: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:55:27,560: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:55:27,560: calculator.py: - Root function with args -125 , 3
+INFO: 2021-07-25 18:57:33,026: calculator.py: - Programm started
+INFO: 2021-07-25 18:57:36,392: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:57:37,896: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:57:38,344: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:57:38,344: calculator.py: - Root function with args -125 , 3
+INFO: 2021-07-25 18:57:56,245: calculator.py: - Programm started
+INFO: 2021-07-25 18:57:58,167: calculator.py: - num1 got -125 value
+INFO: 2021-07-25 18:58:00,472: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:58:00,952: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:58:00,952: calculator.py: - Root function with args -125 , 3
+INFO: 2021-07-25 18:58:41,477: calculator.py: - Programm started
+ERROR: 2021-07-25 18:58:46,711: calculator.py: - Value error
+INFO: 2021-07-25 18:59:32,923: calculator.py: - Programm started
+INFO: 2021-07-25 18:59:34,167: calculator.py: - num1 got 1.0 value
+INFO: 2021-07-25 18:59:36,953: calculator.py: - User chose  operation
+ERROR: 2021-07-25 18:59:36,953: calculator.py: - Wrong operator given by user
+INFO: 2021-07-25 18:59:38,584: calculator.py: - Program continue with users command
+INFO: 2021-07-25 18:59:42,840: calculator.py: - num1 got -125.0 value
+INFO: 2021-07-25 18:59:45,272: calculator.py: - User chose root operation
+INFO: 2021-07-25 18:59:45,768: calculator.py: - num2 got 3 value
+INFO: 2021-07-25 18:59:45,768: calculator.py: - Root function with args -125.0 , 3
+INFO: 2021-07-25 19:00:57,818: calculator.py: - Programm started
+INFO: 2021-07-25 19:01:00,615: calculator.py: - num1 got -125.0 value
+INFO: 2021-07-25 19:01:02,599: calculator.py: - User chose root operation
+INFO: 2021-07-25 19:01:03,224: calculator.py: - num2 got 3.0 value
+INFO: 2021-07-25 19:01:03,224: calculator.py: - Root function with args -125.0 , 3.0
+INFO: 2021-07-25 19:03:39,472: calculator.py: - Programm started
+INFO: 2021-07-25 19:03:41,719: calculator.py: - num1 got -125.0 value
+INFO: 2021-07-25 19:03:44,966: calculator.py: - User chose root operation
+INFO: 2021-07-25 19:03:46,007: calculator.py: - num2 got 3.0 value
+INFO: 2021-07-25 19:03:46,007: calculator.py: - Root function with args -125.0 , 3.0
+INFO: 2021-07-25 19:04:04,893: calculator.py: - Programm started
+INFO: 2021-07-25 19:04:08,647: calculator.py: - num1 got -125.0 value
+INFO: 2021-07-25 19:04:11,063: calculator.py: - User chose root operation
+INFO: 2021-07-25 19:04:12,023: calculator.py: - num2 got 3.0 value
+INFO: 2021-07-25 19:04:12,023: calculator.py: - Root function with args -125.0 , 3.0
+INFO: 2021-07-25 19:05:50,809: calculator.py: - Program continue with users command
+INFO: 2021-07-25 19:05:59,481: calculator.py: - num1 got -125.0 value
+INFO: 2021-07-25 19:06:00,553: calculator.py: - User chose 5 operation
+ERROR: 2021-07-25 19:06:00,554: calculator.py: - Wrong operator given by user
+INFO: 2021-07-25 19:06:03,223: calculator.py: - Program continue with users command
+INFO: 2021-07-25 19:06:05,735: calculator.py: - num1 got -125.0 value
+INFO: 2021-07-25 19:06:07,559: calculator.py: - User chose root operation
+INFO: 2021-07-25 19:06:08,839: calculator.py: - num2 got 5.0 value
+INFO: 2021-07-25 19:06:08,840: calculator.py: - Root function with args -125.0 , 5.0
+INFO: 2021-07-25 19:06:29,576: calculator.py: - Program closed
+INFO: 2021-07-25 19:06:56,095: calculator.py: - Programm started
+INFO: 2021-07-25 19:06:59,254: calculator.py: - num1 got -125.0 value
+INFO: 2021-07-25 19:07:02,103: calculator.py: - User chose root operation
+INFO: 2021-07-25 19:07:02,647: calculator.py: - num2 got 2.0 value
+INFO: 2021-07-25 19:07:02,647: calculator.py: - Root function with args -125.0 , 2.0
+INFO: 2021-07-25 19:08:39,280: calculator.py: - Programm started
+INFO: 2021-07-25 19:08:51,815: calculator.py: - num1 got -125.0 value
+INFO: 2021-07-25 19:08:54,423: calculator.py: - User chose root operation
+INFO: 2021-07-25 19:08:55,495: calculator.py: - num2 got 2.0 value
+INFO: 2021-07-25 19:08:55,495: calculator.py: - Root function with args -125.0 , 2.0
+INFO: 2021-07-25 19:11:49,957: calculator.py: - Programm started
+INFO: 2021-07-25 19:11:52,502: calculator.py: - num1 got -125.0 value
+INFO: 2021-07-25 19:11:53,701: calculator.py: - User chose root operation
+INFO: 2021-07-25 19:11:54,359: calculator.py: - num2 got 2.0 value
+INFO: 2021-07-25 19:11:54,359: calculator.py: - Root function with args -125.0 , 2.0
+ERROR: 2021-07-25 19:11:54,359: calculator.py: - RootError
+INFO: 2021-07-25 20:13:25,319: calculator.py: - Programm started
