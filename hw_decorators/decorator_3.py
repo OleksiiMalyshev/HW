@@ -17,7 +17,7 @@ def filter(func):
 
 @filter
 def list_sum(_list):
-    return print(sum(_list))
+    return sum(_list)
 
 
-list_sum(lst)
+print(list_sum(lst))
