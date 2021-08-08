@@ -4,9 +4,11 @@ class Div:
 
     def __call__(self, func):
         def wrap(*args, **kwargs):
-            print(f"<div class=*{self.arg}*>")
+            new_str = ''
+            new_str += f"<div class=*{self.arg}*>\n"
             result = func(*args, **kwargs)
-            print("</div>")
+            new_str += result
+            new_str += "</div>\n"
             return result
 
         return wrap
@@ -14,10 +16,12 @@ class Div:
 
 def body(func):
     def wrap(*args, **kwargs):
-        print("<body>")
+        new_str = ''
+        new_str += "<body>\n"
         result = func(*args, **kwargs)
-        print("</body>")
-        return result
+        new_str += result
+        new_str += "</body>\n"
+        return new_str
 
     return wrap
 
@@ -28,21 +32,23 @@ class Head:
 
     def __call__(self, func):
         def wrap(*args, **kwargs):
-            print(f'<head>\n'
-                  f'<title>{self.str_to_insert}</title>\n'
-                  f'</head>')
+            new_str = ''
+            new_str += f'<head>\n' + f'<title>{self.str_to_insert}</title>\n' + f'</head>\n'
             result = func(*args, **kwargs)
-            return result
+            new_str += result
+            return new_str
 
         return wrap
 
 
 def html_decor(func):
     def wrap(*args, **kwargs):
-        print('<html>')
+        new_str = ''
+        new_str += '<html>\n'
         result = func(*args, *kwargs)
-        print('</html>')
-        return result
+        new_str += result
+        new_str += '</html>\n'
+        return new_str
 
     return wrap
 
@@ -52,13 +58,15 @@ def html_decor(func):
 @body
 @Div('users_block')
 def get_names_page(names_list):
-    template_head = "<h3> User names: </h3>"
-    template = "<p> {} </p>"
-    print(template_head)
+    template_head = "<h3> User names: </h3>\n"
+    template = "<p> {} </p>\n"
+    new_str = ''
+    new_str += template_head
     for i in names_list:
-        print(template.format(i))
+        new_str += template.format(i)
+    return new_str
 
 
 names = ['Misha', 'Olya', 'Vitaliy', 'Vita']
 
-get_names_page(names)
+print(get_names_page(names))
