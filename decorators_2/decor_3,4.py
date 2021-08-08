@@ -9,7 +9,7 @@ class Div:
             result = func(*args, **kwargs)
             new_str += result
             new_str += "</div>\n"
-            return result
+            return new_str
 
         return wrap
 
