@@ -1,5 +1,7 @@
 import math
 
+class MinusArguments(Exception):
+    pass
 
 class WrongType(Exception):
     pass
@@ -36,9 +38,15 @@ class TypeChecker:
 
 @TypeChecker(int, int, float)
 def hypotenuse(a, b):
-    hyp = math.sqrt(a ** 2 + b ** 2)
-    return hyp
+    try:
+        if a < 0 or b < 0:
+            raise MinusArguments
+        hyp = math.sqrt(a ** 2 + b ** 2)
+        return hyp
+    except MinusArguments:
+        print("Неможливо побудувати трикутник зі сторонами менше 0 см")
+
 
 
 x, y = 3, 4
-print(f'Гіпотенуза - при катетах {x} та {y} -- {hypotenuse(x, y)}')
+print(f'Гіпотенуза - при катетах {x} та {y} - {hypotenuse(x, y)}')
