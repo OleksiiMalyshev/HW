@@ -29,6 +29,8 @@ def read_sock():
             path = os.path.join(os.path.abspath(os.path.dirname(__file__)), 'downloaded_file.txt')
             os.remove(path)
 
+            print('File loaded with name "downloaded_file.jpg"')
+
         else:
             decoded_data = data.decode('utf-8')
             print(decoded_data)
