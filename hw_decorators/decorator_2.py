@@ -4,7 +4,8 @@ import math
 def decorated_print(func):
     def wrapper(a, b):
         result = func(a, b)
-        return print(f"При катетах {a}, {b} гіпотенуза дорівнює {result}")
+        # print(f"При катетах {a}, {b} гіпотенуза дорівнює {result}")
+        return result
 
     return wrapper
 
@@ -15,4 +16,4 @@ def hipotenuse(a, b):
     return int(result)
 
 
-hipotenuse(3, 4)
+print(hipotenuse(3, 4))
