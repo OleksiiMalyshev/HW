@@ -1,3 +1,4 @@
+import argparse
 import json
 
 
@@ -5,32 +6,34 @@ class UserOrEmailInvalid(Exception):
     pass
 
 
-def dict_add(us, em):
-    user_dict = {'username': us, 'email': em}
-    return user_dict
+parser = argparse.ArgumentParser()
+parser.add_argument("--username", help="Enter username ")
+parser.add_argument("--email", help="Enter email ")
+
+args = parser.parse_args()
+user_dict = {}
+
+if args.username:
+    user_dict["username"] = args.username
+
+if args.email:
+    user_dict["email"] = args.email
+
+with open("data.json", 'r') as file:
+    user_data = json.loads(file.readline())
+
+try:
+    for user in user_data:
+        if user["username"] == user_dict["username"]:
+            raise UserOrEmailInvalid
+        elif user["email"] == user_dict["email"]:
+            raise UserOrEmailInvalid
+
+    user_data.append(user_dict)
+
+except UserOrEmailInvalid:
+    print("Username or email already exist! To change him.")
 
 
-user_list = []
-
-while True:
-    try:
-        user_data = input("Введите username и email (ex to exit) - ").split()
-        if user_data[0] == 'ex':
-            break
-        for i in user_list:
-            if i['username'] == user_data[0] or i['email'] == user_data[1]:
-                raise UserOrEmailInvalid
-
-        user_list.append(dict_add(user_data[0], user_data[1]))
-    except UserOrEmailInvalid:
-        print("User or Email already exists")
-
-users = json.dumps(user_list)
-
-with open('data.json', 'r') as file:
-    file.readline()
-
-with open('data.json', 'w') as file:
-    file.write(users)
-
-print(users)
+with open("data.json", 'w') as file:
+    file.write(json.dumps(user_data))
