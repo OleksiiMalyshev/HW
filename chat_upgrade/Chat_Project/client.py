@@ -2,6 +2,7 @@ import socket
 import threading
 from PIL import Image
 import os
+import re
 
 
 def read_sock():
@@ -56,17 +57,33 @@ def send_file():
 
 server = ('192.168.0.100', 1021)
 alias = input("Your username: ")
-print('To send file type "Send_file')
 sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind(('', 0))
-sock.sendto((alias + " Connect to server").encode('utf-8'), server)
+sock.sendto(('[' + alias + "] Connect to server").encode('utf-8'), server)
 
 potik = threading.Thread(target=read_sock)
 potik.start()
 
 while True:
-    message = input("Your message: ")
-    if message == 'Send_file':
-        send_file()
-    else:
-        sock.sendto(('[' + alias + '] ' + message).encode('utf-8'), server)
+    print('1. Send message to group chat')
+    print('2. Send private message')
+    try:
+        menu_choose = int(input(':'))
+    except ValueError:
+        continue
+    if menu_choose == 1:
+        print('To send file type "Send_file')
+        message = input("Your message: ")
+        if message == 'Send_file':
+            send_file()
+        else:
+            sock.sendto(('[' + alias + '] ' + message).encode('utf-8'), server)
+    elif menu_choose == 2:
+        recipient = input('Recipient(Nickname): ')
+        print('To send file type "Send_file')
+        message = input("Your message: ")
+        message = '@' + recipient + ', ' + message
+        if message == '@' + recipient + ', ' + 'Send_file':
+            send_file()
+        else:
+            sock.sendto(('[' + alias + '] ' + message).encode('utf-8'), server)
