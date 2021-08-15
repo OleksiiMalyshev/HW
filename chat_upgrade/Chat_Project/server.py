@@ -7,6 +7,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind(('192.168.0.100', 1021))
 clients = {}
 print("Server start")
+
 while True:
     data, address = sock.recvfrom(1024)
     recipient_nickname = re.search("@(.*),", data.decode('utf-8'))
@@ -25,4 +26,4 @@ while True:
         recipient_nickname = ''.join(recipient_nickname)
         for address in clients:
             if clients[address] == '[' + recipient_nickname + ']':
-                sock.sendto(data, address)
+                 sock.sendto(data, address)

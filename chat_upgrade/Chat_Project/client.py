@@ -36,7 +36,6 @@ def read_sock():
             decoded_data = data.decode('utf-8')
             print(decoded_data)
 
-
 def send_file():
     file = input('Write path to file - ')
     file_to_send = open(file, 'rb')
